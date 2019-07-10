@@ -9,22 +9,48 @@ function LoginScreen({ navigation, saveUserToken }) {
   const [password, setPassword] = useState("");
 
   const _signInAsync = () => {
-    console.log(email, password);
-    // fetch("http://192.168.1.3:3000/api/v1/test")
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     saveUserToken(JSON.stringify(data))
-    //       .then(() => {
-    //         navigation.navigate("App");
-    //       })
-    //       .catch(error => {
-    //         setError(error);
-    //       });
-    //   });
+    const GET_USER = `
+    {
+      user(email: "${email}", password: "${password}"){
+        email
+        firstName
+        lastName
+        token
+      }
+    }
+    `;
+    const options = {
+      method: "post",
+      body: JSON.stringify({ query: GET_USER }),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    };
+    fetch("http://192.168.1.3:3000/graphql", options)
+      .then(response => response.json())
+      .then(({ errors, data }) => {
+        if (!errors) {
+          saveUserToken(JSON.stringify(data.user))
+            .then(() => {
+              navigation.navigate("App");
+            })
+            .catch(error => {
+              setError(error);
+            });
+        } else {
+          setError(errors);
+        }
+      });
+  };
+  const displayErrors = () => {
+    return error.map((error, idx) => {
+      return <Text key={idx}>{error.message}</Text>;
+    });
   };
   return (
     <View style={styles.container}>
       <Text>This is the login screen</Text>
+      {error ? displayErrors() : <Text />}
       <TextInput
         value={email}
         onChangeText={currentEmail => setEmail(currentEmail)}

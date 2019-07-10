@@ -12,7 +12,6 @@ function RegisterScreen({ navigation, saveUserToken }) {
   const [email, setEmail] = useState("");
 
   const _registerAsync = () => {
-    console.log(email, firstName, lastName, password, confirmPassword);
     const ADD_USER = `
         mutation{
             AddUser(firstName: "${firstName}" lastName: "${lastName}" email: "${email}" password: "${password}"){

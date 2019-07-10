@@ -28,7 +28,7 @@ function HomeScreen({ navigation, token, removeUserToken }) {
       <Button title="I'm done, sign me out" onPress={_signOutAsync} />
       <StatusBar barStyle="default" />
       {token ? (
-        <Text> Here is the user token {token.firstName}</Text>
+        <Text> Hello, {token.firstName}</Text>
       ) : (
         <Text>Please sign in</Text>
       )}
