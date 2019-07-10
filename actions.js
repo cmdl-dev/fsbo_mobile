@@ -38,6 +38,7 @@ export const getUserToken = () => dispatch =>
 export const saveUserToken = userData => dispatch =>
   AsyncStorage.setItem("userToken", userData)
     .then(data => {
+      console.log(userData);
       dispatch(loading(false));
       dispatch(saveToken(JSON.parse(userData)));
     })

@@ -6,7 +6,7 @@ import { saveUserToken } from "../actions";
 function RegisterScreen({ navigation, saveUserToken }) {
   const [error, setError] = useState(null);
   const [password, setPassword] = useState("");
-  const [confirmPassword, setconfirmPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,8 +16,10 @@ function RegisterScreen({ navigation, saveUserToken }) {
     const ADD_USER = `
         mutation{
             AddUser(firstName: "${firstName}" lastName: "${lastName}" email: "${email}" password: "${password}"){
+                firstName
+                lastName
                 email
-                id
+                token
             }
         }
     `;
@@ -31,7 +33,13 @@ function RegisterScreen({ navigation, saveUserToken }) {
     fetch("http://192.168.1.3:3000/graphql", options)
       .then(response => response.json())
       .then(({ data }) => {
-        console.log(data);
+        saveUserToken(JSON.stringify(data.AddUser))
+          .then(() => {
+            navigation.navigate("App");
+          })
+          .catch(error => {
+            setError(error);
+          });
       });
     // fetch("http://192.168.1.3:3000/api/v1/test")
     //   .then(response => response.json())
@@ -48,6 +56,7 @@ function RegisterScreen({ navigation, saveUserToken }) {
   return (
     <View style={styles.container}>
       <Text>Register</Text>
+      {error ? <Text>Error is {error}</Text> : <Text />}
       <TextInput
         value={firstName}
         onChangeText={currentFirstName => setFirstName(currentFirstName)}
@@ -76,7 +85,7 @@ function RegisterScreen({ navigation, saveUserToken }) {
       <TextInput
         value={confirmPassword}
         onChangeText={currentConfirmPassword =>
-          setconfirmPassword(currentConfirmPassword)
+          setConfirmPassword(currentConfirmPassword)
         }
         secureTextEntry={true}
         style={styles.input}
