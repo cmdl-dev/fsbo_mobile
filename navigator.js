@@ -9,6 +9,7 @@ import OtherScreen from "./screens/OtherScreen";
 import CustomHeader from "./component/CustomHeader";
 import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
+import RegisterScreen from "./screens/RegisterScreen";
 import AuthLoadingScreen from "./screens/AuthLoadingScreen";
 /**
  * A home landing page
@@ -67,6 +68,13 @@ export const AuthStack = createStackNavigator(
       navigationOptions: {
         headerLeft: null,
         headerTitle: "Login Screen"
+      }
+    },
+    Register: {
+      screen: RegisterScreen,
+      navigationOptions: {
+        headerLeft: null,
+        headerTitle: "Register Screen"
       }
     }
   },

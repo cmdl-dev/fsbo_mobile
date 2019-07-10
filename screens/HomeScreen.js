@@ -27,7 +27,11 @@ function HomeScreen({ navigation, token, removeUserToken }) {
     <View style={styles.container}>
       <Button title="I'm done, sign me out" onPress={_signOutAsync} />
       <StatusBar barStyle="default" />
-      <Text> Here is the user token {token.token}</Text>
+      {token ? (
+        <Text> Here is the user token {token.userName}</Text>
+      ) : (
+        <Text>Please sign in</Text>
+      )}
       <Button
         title="Take me to the other screen"
         onPress={() => {
@@ -47,9 +51,12 @@ const styles = StyleSheet.create({
   }
 });
 
-const mapStateToProps = state => ({
-  token: state.token
-});
+const mapStateToProps = state => {
+  console.log(state);
+  return {
+    token: state.token.token
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
   removeUserToken: () => dispatch(removeUserToken())

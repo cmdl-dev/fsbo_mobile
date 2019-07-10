@@ -23,7 +23,7 @@ const AuthLoadingScreen = ({ getUserToken, token, navigation }) => {
   const _bootstrapAsync = () => {
     getUserToken()
       .then(() => {
-        navigation.navigate(token !== null ? "App" : "Auth");
+        navigation.navigate(Object.keys(token).length !== 0 ? "App" : "Auth");
       })
       .catch(error => {
         setError(error);
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = state => ({
-  token: state.token
+  token: state.token.token
 });
 
 const mapDispatchToProps = dispatch => ({

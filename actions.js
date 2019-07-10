@@ -35,11 +35,11 @@ export const getUserToken = () => dispatch =>
       dispatch(error(err.message || "ERROR"));
     });
 
-export const saveUserToken = data => dispatch =>
-  AsyncStorage.setItem("userToken", "abc")
+export const saveUserToken = userData => dispatch =>
+  AsyncStorage.setItem("userToken", userData)
     .then(data => {
       dispatch(loading(false));
-      dispatch(saveToken("token saved"));
+      dispatch(saveToken(JSON.parse(userData)));
     })
     .catch(err => {
       dispatch(loading(false));
