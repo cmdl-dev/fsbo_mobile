@@ -11,18 +11,22 @@ function LoginScreen({ navigation, saveUserToken }) {
 
   const _signInAsync = () => {
     const GET_USER = `
-    {
-      user(email: "${email}", password: "${password}"){
-        email
-        firstName
-        lastName
-        token
+      query getUser($email: String!, $password: String!){
+        user(email: $email, password: $password){
+          email
+          firstName
+          lastName
+          token
+        }
       }
-    }
     `;
+    console.log(GET_USER);
     const options = {
       method: "post",
-      body: JSON.stringify({ query: GET_USER }),
+      body: JSON.stringify({
+        query: GET_USER,
+        variables: { email, password }
+      }),
       headers: {
         "Content-Type": "application/json"
       }
@@ -86,7 +90,7 @@ const styles = StyleSheet.create({
     height: 44,
     padding: 10,
     borderWidth: 1,
-    borderCoLor: "black",
+    borderColor: "black",
     marginBottom: 10
   }
 });
