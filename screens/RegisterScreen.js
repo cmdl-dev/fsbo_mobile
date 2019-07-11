@@ -102,54 +102,38 @@ function RegisterScreen({ navigation, saveUserToken }) {
       <TextInput
         value={firstName}
         onChangeText={currentFirstName => setFirstName(currentFirstName)}
-        style={{
-          width: 200,
-          height: 44,
-          padding: 10,
-          borderWidth: 1,
-          borderColor: errorFields.includes("firstName") ? "red" : "black",
-          marginBottom: 10
-        }}
+        style={[
+          styles.input,
+          { borderColor: errorFields.includes("firstName") ? "red" : "black" }
+        ]}
         placeholder={"First Name"}
       />
       <TextInput
         value={lastName}
         onChangeText={currentLastName => setLastName(currentLastName)}
-        style={{
-          width: 200,
-          height: 44,
-          padding: 10,
-          borderWidth: 1,
-          borderColor: errorFields.includes("lastName") ? "red" : "black",
-          marginBottom: 10
-        }}
+        style={[
+          styles.input,
+          { borderColor: errorFields.includes("lastName") ? "red" : "black" }
+        ]}
         placeholder={"Last Name"}
       />
       <TextInput
         value={email}
         onChangeText={currentEmail => setEmail(currentEmail)}
-        style={{
-          width: 200,
-          height: 44,
-          padding: 10,
-          borderWidth: 1,
-          borderColor: errorFields.includes("email") ? "red" : "black",
-          marginBottom: 10
-        }}
+        style={[
+          styles.input,
+          { borderColor: errorFields.includes("email") ? "red" : "black" }
+        ]}
         placeholder={"Email"}
       />
       <TextInput
         value={password}
         onChangeText={currentPassword => setPassword(currentPassword)}
         secureTextEntry={true}
-        style={{
-          width: 200,
-          height: 44,
-          padding: 10,
-          borderWidth: 1,
-          borderColor: errorFields.includes("password") ? "red" : "black",
-          marginBottom: 10
-        }}
+        style={[
+          styles.input,
+          { borderColor: errorFields.includes("password") ? "red" : "black" }
+        ]}
         placeholder={"Password"}
       />
       <TextInput
@@ -158,14 +142,10 @@ function RegisterScreen({ navigation, saveUserToken }) {
           setConfirmPassword(currentConfirmPassword)
         }
         secureTextEntry={true}
-        style={{
-          width: 200,
-          height: 44,
-          padding: 10,
-          borderWidth: 1,
-          borderColor: errorFields.includes("no match") ? "red" : "black",
-          marginBottom: 10
-        }}
+        style={[
+          styles.input,
+          { borderColor: errorFields.includes("no match") ? "red" : "black" }
+        ]}
         placeholder={"Confirm Password"}
       />
       <Text>
@@ -184,6 +164,13 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center"
+  },
+  input: {
+    width: 200,
+    height: 44,
+    padding: 10,
+    borderWidth: 1,
+    marginBottom: 10
   }
 });
 
