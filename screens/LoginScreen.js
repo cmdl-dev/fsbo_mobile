@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Button, TextInput } from "react-native";
 import { connect } from "react-redux";
+import { BASE_URL } from "../config/config";
 import { saveUserToken } from "../actions";
 
 function LoginScreen({ navigation, saveUserToken }) {
@@ -26,7 +27,7 @@ function LoginScreen({ navigation, saveUserToken }) {
         "Content-Type": "application/json"
       }
     };
-    fetch("http://192.168.1.3:3000/graphql", options)
+    fetch(`${BASE_URL}:3000/graphql`, options)
       .then(response => response.json())
       .then(({ errors, data }) => {
         if (!errors) {

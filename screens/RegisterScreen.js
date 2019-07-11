@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Button, TextInput } from "react-native";
 import { connect } from "react-redux";
+
+import { BASE_URL } from "../config/config";
 import { saveUserToken } from "../actions";
 
+// TODO: Add input validation for each text input
 function RegisterScreen({ navigation, saveUserToken }) {
-  const [error, setError] = useState(null);
+  const [error, setError] = useState([]);
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
 
+  const _checkVadility = () => {
+    // Make sure that each input has the correct information
+    // call registerAsync
+  };
   const _registerAsync = () => {
     const ADD_USER = `
         mutation{
@@ -29,33 +36,32 @@ function RegisterScreen({ navigation, saveUserToken }) {
         "Content-Type": "application/json"
       }
     };
-    fetch("http://192.168.1.3:3000/graphql", options)
+    fetch(`${BASE_URL}:3000/graphql`, options)
       .then(response => response.json())
       .then(({ data }) => {
-        saveUserToken(JSON.stringify(data.AddUser))
-          .then(() => {
-            navigation.navigate("App");
-          })
-          .catch(error => {
-            setError(error);
-          });
+        const user = data.AddUser;
+        if (user) {
+          saveUserToken(JSON.stringify(data.AddUser))
+            .then(() => {
+              navigation.navigate("App");
+            })
+            .catch(error => {
+              setError([error]);
+            });
+        } else {
+          setError(["Something went wrong with registering your account"]);
+        }
       });
-    // fetch("http://192.168.1.3:3000/api/v1/test")
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     saveUserToken(JSON.stringify(data))
-    //       .then(() => {
-    //         navigation.navigate("App");
-    //       })
-    //       .catch(error => {
-    //         setError(error);
-    //       });
-    //   });
+  };
+  const displayErrors = () => {
+    return error.map((error, idx) => {
+      return <Text key={idx}>{error}</Text>;
+    });
   };
   return (
     <View style={styles.container}>
       <Text>Register</Text>
-      {error ? <Text>Error is {error}</Text> : <Text />}
+      {error ? displayErrors() : <Text />}
       <TextInput
         value={firstName}
         onChangeText={currentFirstName => setFirstName(currentFirstName)}
