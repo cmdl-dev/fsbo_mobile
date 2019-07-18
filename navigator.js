@@ -3,14 +3,19 @@ import React from "react";
 import {
   createStackNavigator,
   createAppContainer,
-  createSwitchNavigator
+  createSwitchNavigator,
+  createBottomTabNavigator
 } from "react-navigation";
-import OtherScreen from "./screens/OtherScreen";
 import CustomHeader from "./component/CustomHeader";
 import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import AuthLoadingScreen from "./screens/AuthLoadingScreen";
+import ProfileScreen from "./screens/ProfileScreen";
+
+import Phase1Screen from "./screens/Phase1Screen";
+import Phase2Screen from "./screens/Phase2Screen";
+import Phase3Screen from "./screens/Phase3Screen";
 /**
  * A home landing page
  * We need a login screen
@@ -37,20 +42,43 @@ let headerDefaultNavigationConfig = {
   },
   headerTintColor: "#fff"
 };
-
-export const AppStack = createStackNavigator(
+//TODO: Remove Otherscreen
+/**
+ *
+ * Each phase determines where that lead is in for each user
+ *
+ * Screen 1: Phase 1
+ * Screen 2: Phase 2
+ * Screen 3: Phase 3
+ */
+export const AppStack = createBottomTabNavigator(
   {
-    HomeScreen: {
-      screen: HomeScreen,
+    Phase1: {
+      screen: Phase1Screen,
       navigationOptions: {
         headerLeft: null,
-        headerTitle: "Home Screen"
+        headerTitle: "Phase 1 Screen"
       }
     },
-    Other: {
-      screen: OtherScreen,
+    Phase2: {
+      screen: Phase2Screen,
       navigationOptions: {
-        headerTitle: "Other screen"
+        headerLeft: null,
+        headerTitle: "Phase 2 Screen"
+      }
+    },
+    Phase3: {
+      screen: Phase3Screen,
+      navigationOptions: {
+        headerLeft: null,
+        headerTitle: "Phase 3 Screen"
+      }
+    },
+    ProfileScreen: {
+      screen: ProfileScreen,
+      navigationOptions: {
+        headerLeft: null,
+        headerTitle: "Profile Screen"
       }
     }
   },
@@ -60,7 +88,6 @@ export const AppStack = createStackNavigator(
     }
   }
 );
-
 export const AuthStack = createStackNavigator(
   {
     SignIn: {

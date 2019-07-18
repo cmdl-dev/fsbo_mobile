@@ -11,14 +11,12 @@ import {
 import { connect } from "react-redux";
 import { removeUserToken } from "../actions";
 
-function HomeScreen({ navigation, token, removeUserToken }) {
+function Phase2Screen({ navigation, user }) {
   const [error, setError] = useState(null);
 
   return (
-    <View style={styles.contatiner}>
-      <Text>
-        This is the Home screen if you want to go to the phase click here
-      </Text>
+    <View style={styles.container}>
+      <Text>This is the screen for phase 2</Text>
     </View>
   );
 }
@@ -34,7 +32,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
   return {
-    token: state.token.token
+    user: state.token.token
   };
 };
 
@@ -45,4 +43,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(HomeScreen);
+)(Phase2Screen);

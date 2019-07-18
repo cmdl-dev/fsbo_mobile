@@ -1,24 +1,29 @@
 import React, { useState } from "react";
-import {
-  AsyncStorage,
-  Button,
-  StatusBar,
-  StyleSheet,
-  View,
-  Text
-} from "react-native";
+import { Button, StyleSheet, View, Text } from "react-native";
 
 import { connect } from "react-redux";
 import { removeUserToken } from "../actions";
 
-function HomeScreen({ navigation, token, removeUserToken }) {
+function ProfileScreen({ navigation, token, removeUserToken }) {
   const [error, setError] = useState(null);
 
+  const _signOutAsync = () => {
+    removeUserToken()
+      .then(() => {
+        navigation.navigate("Auth");
+      })
+      .catch(error => {
+        setError(error);
+      });
+  };
   return (
-    <View style={styles.contatiner}>
-      <Text>
-        This is the Home screen if you want to go to the phase click here
-      </Text>
+    <View style={styles.container}>
+      {token ? (
+        <Text> Hello, {token.firstName}</Text>
+      ) : (
+        <Text>Please sign in</Text>
+      )}
+      <Button title="I'm done, sign me out" onPress={_signOutAsync} />
     </View>
   );
 }
@@ -33,6 +38,7 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = state => {
+  console.log(state);
   return {
     token: state.token.token
   };
@@ -45,4 +51,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(HomeScreen);
+)(ProfileScreen);

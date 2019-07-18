@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { StyleSheet, Text, View, Button, TextInput } from "react-native";
 import { connect } from "react-redux";
 
-import { BASE_URL } from "../config/config";
+import { REGISTER } from "../graphqlQueries";
 import { saveUserToken } from "../actions";
+import { graphqlFetch } from "../utils";
 
 // TODO: Add input validation for each text input
 function RegisterScreen({ navigation, saveUserToken }) {
@@ -47,48 +48,28 @@ function RegisterScreen({ navigation, saveUserToken }) {
     }
   };
   const _registerAsync = () => {
-    console.log("submittting");
-    const ADD_USER = `
-        mutation addUser($firstName: String!, $lastName: String!, $email: String!, $password: String!, ){
-            AddUser(firstName: $firstName lastName: $lastName email: $email password: $password){
-                firstName
-                lastName
-                email
-                token
-            }
-        }
-    `;
-    const options = {
-      method: "post",
-      body: JSON.stringify({
-        query: ADD_USER,
-        variables: {
-          firstName: firstName.length > 0 ? firstName : undefined,
-          lastName: lastName.length > 0 ? lastName : undefined,
-          email: email.length > 0 ? email : undefined,
-          password: password.length > 0 ? password : undefined
-        }
-      }),
-      headers: {
-        "Content-Type": "application/json"
+    graphqlFetch(
+      {
+        firstName: firstName.length > 0 ? firstName : undefined,
+        lastName: lastName.length > 0 ? lastName : undefined,
+        email: email.length > 0 ? email : undefined,
+        password: password.length > 0 ? password : undefined
+      },
+      "",
+      REGISTER
+    ).then(({ errors, data }) => {
+      if (!errors) {
+        saveUserToken(JSON.stringify(data.AddUser))
+          .then(() => {
+            navigation.navigate("App");
+          })
+          .catch(error => {
+            setError([error]);
+          });
+      } else {
+        setError(errors);
       }
-    };
-    fetch(`${BASE_URL}:3000/graphql`, options)
-      .then(response => response.json())
-      .then(({ errors, data }) => {
-        if (!errors) {
-          saveUserToken(JSON.stringify(data.AddUser))
-            .then(() => {
-              navigation.navigate("App");
-            })
-            .catch(error => {
-              setError([error]);
-            });
-        } else {
-          console.log(errors);
-          setError(errors);
-        }
-      });
+    });
   };
   const displayErrors = () => {
     return error.map((error, idx) => {
@@ -154,6 +135,7 @@ function RegisterScreen({ navigation, saveUserToken }) {
           : "Your passwords do not match"}
       </Text>
       <Button title="Register" onPress={_checkVadility} />
+      <Button title="Login" onPress={() => navigation.navigate("SignIn")} />
     </View>
   );
 }

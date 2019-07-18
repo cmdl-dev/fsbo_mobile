@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Button, TextInput } from "react-native";
 import { connect } from "react-redux";
-import { BASE_URL } from "../config/config";
 import { saveUserToken } from "../actions";
+
+import { LOGIN } from "../graphqlQueries";
+import { graphqlFetch } from "../utils";
 
 function LoginScreen({ navigation, saveUserToken }) {
   const [error, setError] = useState(null);
@@ -10,42 +12,20 @@ function LoginScreen({ navigation, saveUserToken }) {
   const [password, setPassword] = useState("");
 
   const _signInAsync = () => {
-    const GET_USER = `
-      query getUser($email: String!, $password: String!){
-        user(email: $email, password: $password){
-          email
-          firstName
-          lastName
-          token
-        }
+    setError(null);
+    graphqlFetch({ email, password }, "", LOGIN).then(({ errors, data }) => {
+      if (!errors) {
+        saveUserToken(JSON.stringify(data.user))
+          .then(() => {
+            navigation.navigate("App");
+          })
+          .catch(error => {
+            setError(error);
+          });
+      } else {
+        setError(errors);
       }
-    `;
-    console.log(GET_USER);
-    const options = {
-      method: "post",
-      body: JSON.stringify({
-        query: GET_USER,
-        variables: { email, password }
-      }),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    };
-    fetch(`${BASE_URL}:3000/graphql`, options)
-      .then(response => response.json())
-      .then(({ errors, data }) => {
-        if (!errors) {
-          saveUserToken(JSON.stringify(data.user))
-            .then(() => {
-              navigation.navigate("App");
-            })
-            .catch(error => {
-              setError(error);
-            });
-        } else {
-          setError(errors);
-        }
-      });
+    });
   };
   const displayErrors = () => {
     return error.map((error, idx) => {
