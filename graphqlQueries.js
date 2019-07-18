@@ -1,6 +1,7 @@
 const GET_MY_LEADS = `
       query getLeads($firstName: String, $lastName: String, $email: String, $phone: String){
         leads(firstName: $firstName, lastName: $lastName, email: $email, phone: $phone ){
+          id
           firstName
           lastName
           email

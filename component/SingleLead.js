@@ -14,7 +14,7 @@ import {
 
 import Icon from "react-native-vector-icons/FontAwesome";
 
-const SingleLead = ({ leadInfo }) => {
+const SingleLead = ({ leadInfo, removeItem, index }) => {
   const leadXPos = new Animated.Value(0);
   const nextPhaseOpacity = new Animated.Value(0);
   const archiveOpacity = new Animated.Value(0);
@@ -46,6 +46,7 @@ const SingleLead = ({ leadInfo }) => {
         }).start();
         if (swipeDirection === "left") {
           console.log("Archive");
+          removeItem(index);
         } else {
           console.log("Next Phase");
         }
@@ -68,15 +69,29 @@ const SingleLead = ({ leadInfo }) => {
   const _handleCall = () => {
     console.log("You are calling someone");
   };
+  const _handleNotes = () => {
+    console.log("You are accessing the notes of someone");
+  };
   return (
     <View style={styles.outerContainer}>
       <Animated.View
         {...leadPanResponder.panHandlers}
         style={[styles.container, { left: leadXPos }]}
       >
-        <View style={styles.userInfo}>
-          <Text>{leadInfo.firstName}</Text>
-          <Text>{leadInfo.lastName}</Text>
+        <View style={styles.left}>
+          <View style={styles.userInfo}>
+            <Text>{leadInfo.firstName}</Text>
+            <Text>{leadInfo.lastName}</Text>
+          </View>
+          <TouchableOpacity>
+            <Icon
+              style={styles.notes}
+              onPress={_handleNotes}
+              name="sticky-note"
+              size={30}
+              color="#900"
+            />
+          </TouchableOpacity>
         </View>
         <TouchableOpacity onPress={_handleCall} style={styles.contactInfo}>
           <Text>{leadInfo.phone}</Text>
@@ -118,6 +133,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "75px",
     position: "relative",
+    backgroundColor: "white",
     zIndex: 10
   },
   userInfo: {
@@ -144,18 +160,19 @@ const styles = StyleSheet.create({
   option: {
     display: "flex",
     justifyContent: "center",
+    color: "white",
     alignItems: "center"
   },
 
   nextPhase: {
-    width: 80,
+    width: "40%",
     height: "100%",
-    backgroundColor: "green"
+    backgroundColor: "#00b200"
   },
   archive: {
-    width: 50,
+    width: "40%",
     height: "100%",
-    backgroundColor: "red"
+    backgroundColor: "#f83b3a"
   }
 });
 export default SingleLead;

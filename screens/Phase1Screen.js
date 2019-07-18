@@ -3,6 +3,7 @@ import {
   AsyncStorage,
   Button,
   StatusBar,
+  FlatList,
   StyleSheet,
   View,
   Text
@@ -28,6 +29,11 @@ function Phase1Screen({ navigation, user }) {
       setLeads(data.leads);
     });
   }, []);
+  const _handleRemoveLead = id => {
+    const newLeads = leads.filter(lead => lead.id !== id && lead);
+    setLeads(newLeads);
+  };
+  const _handleMoveToNextPhase = () => {};
 
   if (leads.length === 0) {
     return (
@@ -37,20 +43,25 @@ function Phase1Screen({ navigation, user }) {
     );
   }
   return (
-    <View style={styles.container}>
-      {leads.map((lead, index) => {
-        return <SingleLead leadInfo={lead} />;
-      })}
-    </View>
+    <FlatList
+      style={styles.container}
+      data={leads}
+      renderItem={({ item }) => (
+        <SingleLead
+          key={item.id}
+          index={item.id}
+          removeItem={_handleRemoveLead}
+          leadInfo={item}
+        />
+      )}
+    />
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     paddingTop: "40px",
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
+    backgroundColor: "#fff"
   }
 });
 
