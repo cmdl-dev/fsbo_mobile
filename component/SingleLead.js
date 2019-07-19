@@ -123,15 +123,15 @@ const styles = StyleSheet.create({
     width: "100%"
   },
   container: {
-    marginBottom: "10px",
+    marginBottom: 10,
     display: "flex",
     flexDirection: "row",
     borderColor: "black",
-    borderWidth: "2px",
-    padding: "10px",
+    borderWidth: 2,
+    padding: 10,
     justifyContent: "space-between",
     width: "100%",
-    height: "75px",
+    height: 75,
     position: "relative",
     backgroundColor: "white",
     zIndex: 10

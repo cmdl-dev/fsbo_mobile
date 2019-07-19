@@ -17,7 +17,9 @@ import { graphqlFetch } from "../utils";
 import { GET_MY_LEADS } from "../graphqlQueries";
 
 function Phase1Screen({ navigation, user }) {
+  const [leadObject, setLeadObject] = useState({ offset: 0, limit: 20 });
   const [leads, setLeads] = useState([]);
+  const [renderedLeads, setRenderedLeads] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -29,13 +31,31 @@ function Phase1Screen({ navigation, user }) {
       setLeads(data.leads);
     });
   }, []);
+  useEffect(() => {
+    console.log("Use effect");
+    _renderLeads();
+  }, [leads]);
   const _handleRemoveLead = id => {
-    const newLeads = leads.filter(lead => lead.id !== id && lead);
-    setLeads(newLeads);
+    const newLeads = renderedLeads.filter(lead => lead.id !== id && lead);
+    setRenderedLeads(newLeads);
+  };
+  const _renderLeads = () => {
+    console.log("going to re-render leads");
+    const start = leadObject.offset;
+    const end = start + leadObject.limit;
+    console.log(start, end, leadObject, leads.length);
+
+    // There is no more objects to fetch
+    if (start > leads.length) {
+      return;
+    }
+    const newRenderedLeads = leads.slice(start, end);
+    setLeadObject({ offset: leadObject.offset + leadObject.limit, limit: 20 });
+    setRenderedLeads([...renderedLeads, ...newRenderedLeads]);
   };
   const _handleMoveToNextPhase = () => {};
 
-  if (leads.length === 0) {
+  if (renderedLeads.length === 0) {
     return (
       <View style={styles.container}>
         <Text>You don't have any leads</Text>
@@ -45,7 +65,9 @@ function Phase1Screen({ navigation, user }) {
   return (
     <FlatList
       style={styles.container}
-      data={leads}
+      data={renderedLeads}
+      onEndReached={_renderLeads}
+      onEndReachedThreshold={0.7}
       renderItem={({ item }) => (
         <SingleLead
           key={item.id}
@@ -60,7 +82,9 @@ function Phase1Screen({ navigation, user }) {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: "40px",
+    paddingTop: 40,
+    paddingRight: 10,
+    paddingLeft: 10,
     backgroundColor: "#fff"
   }
 });
