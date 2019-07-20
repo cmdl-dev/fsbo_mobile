@@ -46,7 +46,9 @@ const SingleLead = ({ leadInfo, removeItem, index }) => {
         }).start();
         if (swipeDirection === "left") {
           console.log("Archive");
-          removeItem(index);
+          setTimeout(() => {
+            removeItem(index);
+          }, 500);
         } else {
           console.log("Next Phase");
         }
