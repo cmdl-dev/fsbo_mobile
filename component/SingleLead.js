@@ -20,7 +20,8 @@ const SingleLead = ({ leadInfo, removeItem, movePhase, currentPhase }) => {
   const archiveOpacity = new Animated.Value(0);
 
   const leadPanResponder = PanResponder.create({
-    onStartShouldSetPanResponder: () => true,
+    onMoveShouldSetPanResponder: (evt, gs) =>
+      gs.dy > 0 ? gs.dy < 5 : gs.dy > -5,
     onPanResponderMove: (evt, gs) => {
       const width = Dimensions.get("window").width;
       //Values for the lead container position
