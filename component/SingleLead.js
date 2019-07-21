@@ -14,7 +14,7 @@ import {
 
 import Icon from "react-native-vector-icons/FontAwesome";
 
-const SingleLead = ({ leadInfo, removeItem, index }) => {
+const SingleLead = ({ leadInfo, removeItem, movePhase, currentPhase }) => {
   const leadXPos = new Animated.Value(0);
   const nextPhaseOpacity = new Animated.Value(0);
   const archiveOpacity = new Animated.Value(0);
@@ -45,11 +45,16 @@ const SingleLead = ({ leadInfo, removeItem, index }) => {
           duration: 250
         }).start();
         if (swipeDirection === "left") {
+          movePhase(0, leadInfo.id);
           console.log("Archive");
           setTimeout(() => {
-            removeItem(index);
+            removeItem(leadInfo.id);
           }, 500);
         } else {
+          movePhase(currentPhase + 1, leadInfo.id);
+          setTimeout(() => {
+            removeItem(leadInfo.id);
+          }, 500);
           console.log("Next Phase");
         }
       } else {

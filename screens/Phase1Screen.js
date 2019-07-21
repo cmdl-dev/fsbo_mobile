@@ -14,7 +14,7 @@ import SingleLead from "../component/SingleLead";
 import { removeUserToken } from "../actions";
 
 import { graphqlFetch } from "../utils";
-import { GET_MY_LEADS } from "../graphqlQueries";
+import { GET_MY_LEADS, UPDATE_PHASE } from "../graphqlQueries";
 
 function Phase1Screen({ navigation, user }) {
   const [leadObject, setLeadObject] = useState({ offset: 0, limit: 20 });
@@ -23,27 +23,38 @@ function Phase1Screen({ navigation, user }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    graphqlFetch({}, user.token, GET_MY_LEADS).then(({ errors, data }) => {
-      if (errors) {
-        setErrors(errors);
-        return;
+    graphqlFetch({ phase: 1 }, user.token, GET_MY_LEADS).then(
+      ({ errors, data }) => {
+        if (errors) {
+          setError(errors);
+          return;
+        }
+        console.log("data", data);
+        setLeads(data.leads);
       }
-      setLeads(data.leads);
-    });
+    );
   }, []);
   useEffect(() => {
     console.log("Use effect");
     _renderLeads();
   }, [leads]);
+
+  const displayErrors = () => {
+    return (
+      <View>
+        {error.map((err, index) => (
+          <Text key={index}>{err.message}</Text>
+        ))}
+      </View>
+    );
+  };
   const _handleRemoveLead = id => {
     const newLeads = renderedLeads.filter(lead => lead.id !== id && lead);
     setRenderedLeads(newLeads);
   };
   const _renderLeads = () => {
-    console.log("going to re-render leads");
     const start = leadObject.offset;
     const end = start + leadObject.limit;
-    console.log(start, end, leadObject, leads.length);
 
     // There is no more objects to fetch
     if (start > leads.length) {
@@ -53,11 +64,24 @@ function Phase1Screen({ navigation, user }) {
     setLeadObject({ offset: leadObject.offset + leadObject.limit, limit: 20 });
     setRenderedLeads([...renderedLeads, ...newRenderedLeads]);
   };
-  const _handleMoveToNextPhase = () => {};
+  const _handleMoveToNextPhase = (toPhase, leadId) => {
+    return graphqlFetch(
+      { to: toPhase, id: leadId },
+      user.token,
+      UPDATE_PHASE
+    ).then(({ errors, data }) => {
+      if (errors) {
+        setError(errors);
+        return;
+      }
+      return data;
+    });
+  };
 
   if (renderedLeads.length === 0) {
     return (
       <View style={styles.container}>
+        {error && displayErrors()}
         <Text>You don't have any leads</Text>
       </View>
     );
@@ -71,7 +95,8 @@ function Phase1Screen({ navigation, user }) {
       renderItem={({ item }) => (
         <SingleLead
           key={item.id}
-          index={item.id}
+          currentPhase={1}
+          movePhase={_handleMoveToNextPhase}
           removeItem={_handleRemoveLead}
           leadInfo={item}
         />

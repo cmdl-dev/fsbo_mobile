@@ -1,6 +1,6 @@
 const GET_MY_LEADS = `
-      query getLeads($firstName: String, $lastName: String, $email: String, $phone: String){
-        leads(firstName: $firstName, lastName: $lastName, email: $email, phone: $phone ){
+      query getLeads($phase: Int!){
+        leads(phase: $phase ){
           id
           firstName
           lastName
@@ -30,8 +30,20 @@ const REGISTER = `
       }
   }
 `;
+const UPDATE_PHASE = `
+  mutation changeLead($id: Int!, $to: Int!){
+    ChangeLead(id:$id, to:$to){
+      id
+      firstName
+      lastName
+      phone
+      email
+    }
+  }
+`;
 module.exports = {
   GET_MY_LEADS,
   LOGIN,
+  UPDATE_PHASE,
   REGISTER
 };
