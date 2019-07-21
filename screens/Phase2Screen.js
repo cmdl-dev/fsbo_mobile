@@ -92,14 +92,16 @@ function Phase2Screen({ navigation, user }) {
     );
   }
   return (
-    <SinglePhase
-      user={user}
-      handleRefresh={_handleRefresh}
-      isRefreshing={refreshing.current}
-      currentPhase={currentPhase}
-      leads={renderedLeads}
-      renderLeads={_renderLeads}
-    />
+    <View style={styles.container}>
+      <SinglePhase
+        user={user}
+        handleRefresh={_handleRefresh}
+        isRefreshing={refreshing.current}
+        currentPhase={currentPhase}
+        leads={renderedLeads}
+        renderLeads={_renderLeads}
+      />
+    </View>
   );
 }
 

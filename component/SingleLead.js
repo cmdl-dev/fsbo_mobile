@@ -11,6 +11,7 @@ import {
   View,
   Text
 } from "react-native";
+import call from "react-native-phone-call";
 
 import Icon from "react-native-vector-icons/FontAwesome";
 
@@ -20,8 +21,11 @@ const SingleLead = ({ leadInfo, removeItem, movePhase, currentPhase }) => {
   const archiveOpacity = new Animated.Value(0);
 
   const leadPanResponder = PanResponder.create({
-    onMoveShouldSetPanResponder: (evt, gs) =>
-      gs.dy > 0 ? gs.dy < 5 : gs.dy > -5,
+    onMoveShouldSetPanResponder: (evt, gs) => {
+      //   console.log(gs.dy, gs.dx, gs.dy > 0 ? gs.dy < 0.2 : gs.dy > -0.2);
+
+      return gs.dy === 0 && gs.dx !== 0;
+    },
     onPanResponderMove: (evt, gs) => {
       const width = Dimensions.get("window").width;
       //Values for the lead container position
@@ -74,8 +78,18 @@ const SingleLead = ({ leadInfo, removeItem, movePhase, currentPhase }) => {
       }
     }
   });
+
   const _handleCall = () => {
-    console.log("You are calling someone");
+    console.log(leadInfo.phone, leadInfo.phone.replace(/-/g, ""));
+
+    const args = {
+      number: leadInfo.phone.replace(/-/g, ""),
+      prompt: false
+    };
+    console.log(args);
+    call(args).catch(error => {
+      console.log(error);
+    });
   };
   const _handleNotes = () => {
     console.log("You are accessing the notes of someone");

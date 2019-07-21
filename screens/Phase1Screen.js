@@ -92,22 +92,24 @@ function Phase1Screen({ navigation, user }) {
     );
   }
   return (
-    <SinglePhase
-      user={user}
-      handleRefresh={_handleRefresh}
-      isRefreshing={refreshing.current}
-      currentPhase={currentPhase}
-      leads={renderedLeads}
-      renderLeads={_renderLeads}
-    />
+    <View style={styles.container}>
+      <SinglePhase
+        user={user}
+        handleRefresh={_handleRefresh}
+        isRefreshing={refreshing.current}
+        currentPhase={currentPhase}
+        leads={renderedLeads}
+        renderLeads={_renderLeads}
+      />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 40,
-    paddingRight: 10,
-    paddingLeft: 10,
+    marginTop: 40,
+    marginRight: 10,
+    marginLeft: 10,
     backgroundColor: "#fff"
   }
 });
