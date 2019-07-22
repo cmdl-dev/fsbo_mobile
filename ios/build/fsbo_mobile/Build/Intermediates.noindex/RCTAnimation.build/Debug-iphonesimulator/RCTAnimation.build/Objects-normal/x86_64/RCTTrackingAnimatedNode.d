@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTrackingAnimatedNode.m \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTrackingAnimatedNode.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAnimatedNode.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTValueAnimatedNode.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTUIManager.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/yoga/YGValue.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h

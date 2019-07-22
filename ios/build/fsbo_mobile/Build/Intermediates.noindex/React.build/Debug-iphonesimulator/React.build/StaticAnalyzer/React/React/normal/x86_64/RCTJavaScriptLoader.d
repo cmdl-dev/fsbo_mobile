@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTJavaScriptLoader.mm \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/cxxreact/JSBundleType.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Portability.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Config.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CPortability.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/ios/build/fsbo_mobile/Build/Products/Debug-iphonesimulator/include/yoga/YGValue.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTMultipartDataTask.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTMultipartStreamReader.h \
+  /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native/React/Base/RCTPerformanceLogger.h

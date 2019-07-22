@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>817B4C3A-4EE8-4062-91CD-A1F03E4AD1EC</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>817B4C3A-4EE8-4062-91CD-A1F03E4AD1EC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>fsbo_mobile project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fsbo_mobile</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project fsbo_mobile with scheme fsbo_mobile and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>585450089.40599597</real>
+			<key>timeStoppedRecording</key>
+			<real>585450094.80455899</real>
+			<key>title</key>
+			<string>Building project fsbo_mobile with scheme fsbo_mobile and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>817B4C3A-4EE8-4062-91CD-A1F03E4AD1EC</string>
+		</dict>
+		<key>B74C75BE-83E5-44F3-8488-FDA363F40632</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B74C75BE-83E5-44F3-8488-FDA363F40632.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>fsbo_mobile project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fsbo_mobile</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project fsbo_mobile with scheme fsbo_mobile and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>585448699.71909106</real>
+			<key>timeStoppedRecording</key>
+			<real>585448760.54096901</real>
+			<key>title</key>
+			<string>Building project fsbo_mobile with scheme fsbo_mobile and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>B74C75BE-83E5-44F3-8488-FDA363F40632</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

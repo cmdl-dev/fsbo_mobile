@@ -13,7 +13,7 @@ import {
 } from "react-native";
 import RNImmediatePhoneCall from "react-native-immediate-phone-call";
 
-import Icon from "react-native-vector-icons/FontAwesome";
+// import Icon from "react-native-vector-icons/FontAwesome";
 
 const SingleLead = ({ leadInfo, removeItem, movePhase, currentPhase }) => {
   const leadXPos = new Animated.Value(0);
@@ -103,7 +103,7 @@ const SingleLead = ({ leadInfo, removeItem, movePhase, currentPhase }) => {
             <Text>{leadInfo.firstName}</Text>
             <Text>{leadInfo.lastName}</Text>
           </View>
-          <TouchableOpacity>
+          {/* <TouchableOpacity>
             <Icon
               style={styles.notes}
               onPress={_handleNotes}
@@ -111,11 +111,11 @@ const SingleLead = ({ leadInfo, removeItem, movePhase, currentPhase }) => {
               size={30}
               color="#900"
             />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
         <TouchableOpacity onPress={_handleCall} style={styles.contactInfo}>
           <Text>{leadInfo.phone}</Text>
-          <Icon style={styles.phone} name="phone" size={30} color="#900" />
+          {/* <Icon style={styles.phone} name="phone" size={30} color="#900" /> */}
         </TouchableOpacity>
       </Animated.View>
       <View style={styles.options}>
