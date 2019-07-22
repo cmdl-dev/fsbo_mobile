@@ -1,6 +1,7 @@
 package com.fsbo_mobile;
-
+import com.github.wumke.RNImmediatePhoneCall.RNImmediatePhoneCallPackage;
 import com.facebook.react.ReactActivity;
+
 
 public class MainActivity extends ReactActivity {
 
@@ -12,4 +13,10 @@ public class MainActivity extends ReactActivity {
     protected String getMainComponentName() {
         return "fsbo_mobile";
     }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        RNImmediatePhoneCallPackage.onRequestPermissionsResult(requestCode, permissions, grantResults); // very important event callback
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+
 }

@@ -1,0 +1,221 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from [:react-native-immediate-phone-call] /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native-immediate-phone-call/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.59.8] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/8653354a634663c93fdbb2ebb339122d/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/54bf0d37e455f04e2c191e86a0bc5e05/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/1f157224647de4b9712f73206f16d8f5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/17a8e1db59bc098c0aae7f5f53e1d948/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/9768e222bc4bfb8ce818a72dc1f677de/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/2987d156db723ad5a3c8547e49caf373/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/7e8c47c9f48e797e0252a73c26b224a6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/21c6548d92eba5d37865f9170a1c13d5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/0e866c7fa7ef3102f31e022c11f5f952/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/fc1808625d1fa73dd62d5e23908734f9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/8eeb5ac6ecccf542fa91ab5646e1bedc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c6a59848875ea351685012403c87b8b7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/c6730fd3dcc6832951490a2172ca8848/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/fc7baaa1915c0e872bbc60ecb388d60e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c67f5746d208a44e722a6a0e3f0883cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/efeda4acd4d51242324ff3024af29c36/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/40a63b3cddd461e24a06d5fb80de6fdc/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c5d29db97f91e4e4482f28903a5916e5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/46d586d2ed0374fc97a2cad49602031d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/cdfceb5fcf91d3644a7fb03361f55837/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/25aa3602578abe829b152d5bdf762f22/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/ebd12ec5985d79148c43ddf0cf716d1c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/0780175d00b1acc05a93aadf1b7de49b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/397b6434cc82672af28f55081d3362c4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a005f384fd7c515dd139f0836e21a3b7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c000ea6d520467496382f13351c7c469/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/fd38ad1df4252428ad1ebf50cb9fea87/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/fe50ebe415d0dbb7cbfc9caa349877da/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/b73ecd8d5bc402d3d6429fe187428cc3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/bc9c576dacd376e2ef5689283590145f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/3294d00a381c665c823dda2ca67dd0dd/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/a9f523df958788cc84a285811742836f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/9397250eb64bce082033e186c8d4734c/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/59a5056f9e4f47c3dbfe8519a9d20737/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:2:3-28
+		INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:2:3-28
+		INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.CALL_PHONE
+ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:5:5-69
+	android:name
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:5:22-66
+application
+ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:8:5-26:19
+MERGED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:8:5-26:19
+MERGED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:8:5-26:19
+MERGED from [com.facebook.react:react-native:0.59.8] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/8653354a634663c93fdbb2ebb339122d/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.59.8] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/8653354a634663c93fdbb2ebb339122d/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/efeda4acd4d51242324ff3024af29c36/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/efeda4acd4d51242324ff3024af29c36/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/40a63b3cddd461e24a06d5fb80de6fdc/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/40a63b3cddd461e24a06d5fb80de6fdc/AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/9397250eb64bce082033e186c8d4734c/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/9397250eb64bce082033e186c8d4734c/AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/efeda4acd4d51242324ff3024af29c36/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:10:7-39
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:10:7-39
+	tools:ignore
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:12:7-52
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:12:7-52
+	tools:targetApi
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:11:7-41
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:11:7-41
+	android:allowBackup
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:13:7-34
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:13:7-34
+	android:theme
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:14:7-38
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:14:7-38
+	android:usesCleartextTraffic
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:9:7-38
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:9:7-38
+activity#com.fsbo_mobile.MainActivity
+ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:15:7-24:18
+	android:label
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:17:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:19:9-51
+	android:configChanges
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:18:9-79
+	android:name
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:16:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:20:9-23:25
+action#android.intent.action.MAIN
+ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:21:13-65
+	android:name
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:21:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:22:13-73
+	android:name
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:22:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:25:7-84
+	android:name
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml:25:17-81
+uses-sdk
+INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-immediate-phone-call] /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native-immediate-phone-call/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-immediate-phone-call] /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native-immediate-phone-call/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.8] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/8653354a634663c93fdbb2ebb339122d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.8] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/8653354a634663c93fdbb2ebb339122d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/54bf0d37e455f04e2c191e86a0bc5e05/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/54bf0d37e455f04e2c191e86a0bc5e05/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/1f157224647de4b9712f73206f16d8f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/1f157224647de4b9712f73206f16d8f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/17a8e1db59bc098c0aae7f5f53e1d948/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/17a8e1db59bc098c0aae7f5f53e1d948/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/9768e222bc4bfb8ce818a72dc1f677de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/9768e222bc4bfb8ce818a72dc1f677de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/2987d156db723ad5a3c8547e49caf373/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/2987d156db723ad5a3c8547e49caf373/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/7e8c47c9f48e797e0252a73c26b224a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/7e8c47c9f48e797e0252a73c26b224a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/21c6548d92eba5d37865f9170a1c13d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/21c6548d92eba5d37865f9170a1c13d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/0e866c7fa7ef3102f31e022c11f5f952/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/0e866c7fa7ef3102f31e022c11f5f952/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/fc1808625d1fa73dd62d5e23908734f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/fc1808625d1fa73dd62d5e23908734f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/8eeb5ac6ecccf542fa91ab5646e1bedc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/8eeb5ac6ecccf542fa91ab5646e1bedc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c6a59848875ea351685012403c87b8b7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c6a59848875ea351685012403c87b8b7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/c6730fd3dcc6832951490a2172ca8848/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/c6730fd3dcc6832951490a2172ca8848/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/fc7baaa1915c0e872bbc60ecb388d60e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/fc7baaa1915c0e872bbc60ecb388d60e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c67f5746d208a44e722a6a0e3f0883cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c67f5746d208a44e722a6a0e3f0883cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/efeda4acd4d51242324ff3024af29c36/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/efeda4acd4d51242324ff3024af29c36/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/40a63b3cddd461e24a06d5fb80de6fdc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/40a63b3cddd461e24a06d5fb80de6fdc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c5d29db97f91e4e4482f28903a5916e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c5d29db97f91e4e4482f28903a5916e5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/46d586d2ed0374fc97a2cad49602031d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/46d586d2ed0374fc97a2cad49602031d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/cdfceb5fcf91d3644a7fb03361f55837/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/cdfceb5fcf91d3644a7fb03361f55837/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/25aa3602578abe829b152d5bdf762f22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/25aa3602578abe829b152d5bdf762f22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/ebd12ec5985d79148c43ddf0cf716d1c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/ebd12ec5985d79148c43ddf0cf716d1c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/0780175d00b1acc05a93aadf1b7de49b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/0780175d00b1acc05a93aadf1b7de49b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/397b6434cc82672af28f55081d3362c4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/397b6434cc82672af28f55081d3362c4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a005f384fd7c515dd139f0836e21a3b7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a005f384fd7c515dd139f0836e21a3b7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c000ea6d520467496382f13351c7c469/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c000ea6d520467496382f13351c7c469/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/fd38ad1df4252428ad1ebf50cb9fea87/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/fd38ad1df4252428ad1ebf50cb9fea87/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/fe50ebe415d0dbb7cbfc9caa349877da/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/fe50ebe415d0dbb7cbfc9caa349877da/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/b73ecd8d5bc402d3d6429fe187428cc3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/b73ecd8d5bc402d3d6429fe187428cc3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/bc9c576dacd376e2ef5689283590145f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/bc9c576dacd376e2ef5689283590145f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/3294d00a381c665c823dda2ca67dd0dd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/3294d00a381c665c823dda2ca67dd0dd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/a9f523df958788cc84a285811742836f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/a9f523df958788cc84a285811742836f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/9397250eb64bce082033e186c8d4734c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/9397250eb64bce082033e186c8d4734c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/59a5056f9e4f47c3dbfe8519a9d20737/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/cesarhernandez/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/59a5056f9e4f47c3dbfe8519a9d20737/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /Users/cesarhernandez/Projects/fsbo/fsbo_mobile/android/app/src/debug/AndroidManifest.xml:5:22-75
