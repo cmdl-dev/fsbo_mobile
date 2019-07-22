@@ -11,7 +11,7 @@ import {
   View,
   Text
 } from "react-native";
-import call from "react-native-phone-call";
+import RNImmediatePhoneCall from "react-native-immediate-phone-call";
 
 import Icon from "react-native-vector-icons/FontAwesome";
 
@@ -80,16 +80,14 @@ const SingleLead = ({ leadInfo, removeItem, movePhase, currentPhase }) => {
   });
 
   const _handleCall = () => {
-    console.log(leadInfo.phone, leadInfo.phone.replace(/-/g, ""));
-
-    const args = {
-      number: leadInfo.phone.replace(/-/g, ""),
-      prompt: false
-    };
-    console.log(args);
-    call(args).catch(error => {
-      console.log(error);
-    });
+    const phoneNumber = leadInfo.phone.replace(/-/g, "");
+    console.log(leadInfo.phone, phoneNumber);
+    try {
+      RNImmediatePhoneCall.immediatePhoneCall("1234567890");
+    } catch (e) {
+      // Make a toast with an error
+      console.log(e);
+    }
   };
   const _handleNotes = () => {
     console.log("You are accessing the notes of someone");

@@ -1,0 +1,3 @@
+rootProject.name = 'fsbo_mobile'
+
+include ':app'
