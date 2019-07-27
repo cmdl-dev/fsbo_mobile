@@ -103,6 +103,7 @@ const SingleLead = ({ leadInfo, removeItem, movePhase, currentPhase }) => {
             <Text>{leadInfo.firstName}</Text>
             <Text>{leadInfo.lastName}</Text>
           </View>
+
           {/* <TouchableOpacity>
             <Icon
               style={styles.notes}
@@ -169,29 +170,27 @@ const styles = StyleSheet.create({
   },
   options: {
     zIndex: 0,
+    flex: 1,
     width: "100%",
     height: "86%",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    position: "absolute",
-    alignItems: "center"
+    position: "absolute"
   },
   option: {
-    display: "flex",
-    justifyContent: "center",
-    color: "white",
-    alignItems: "center"
-  },
-
-  nextPhase: {
     width: "40%",
     height: "100%",
+    color: "white",
+    textAlign: "center",
+    textAlignVertical: "center",
+    fontWeight: "700",
+    fontSize: 20
+  },
+  nextPhase: {
     backgroundColor: "#00b200"
   },
   archive: {
-    width: "40%",
-    height: "100%",
     backgroundColor: "#f83b3a"
   }
 });
